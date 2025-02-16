@@ -4,7 +4,7 @@ Compare multiple AI models responses between tabs. No chat history.
 
 &nbsp;
 
-<div align="center"><img src="preview.gif" width="800"></div>
+<div align="center"><img src="preview.png" width="800"></div>
 
 &nbsp;
 
