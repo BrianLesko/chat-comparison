@@ -13,7 +13,7 @@ google_api_key = keys.get('google_api_key', None)
 
 class AIClient:
 
-  def __init__(self,company_name,api_key=None):
+  def __init__(self,company_name,api_key=None,model_name=None):
     self.company_name = company_name
 
     # check for API key in keys.json
@@ -27,6 +27,12 @@ class AIClient:
       self.api_key = api_key
     else:
       self.api_key = None
+
+    self.setup()
+
+    if model_name is not None:
+      self.model_name = model_name
+      os.environ['MODEL_NAME'] = self.model_name
 
     #if api_key: # If an API key is provided, use it instead of what is defined in _get_environment_variables
     #  os.environ['API_KEY'] = self.api_key
@@ -46,7 +52,7 @@ class AIClient:
     if self.company_name == 'xai':
       # XAI API Key
       self.api_key = xai_api_key
-      self.model_name = 'grok-beta'
+      self.model_name = 'grok-2-1212'
       self.base_url="https://api.x.ai/v1"
 
     if self.company_name == 'openai':
