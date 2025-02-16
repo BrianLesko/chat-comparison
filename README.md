@@ -1,6 +1,6 @@
 
 # Low Code Chat UI
-Compare multiple AI models. This git repository hosts a user interface for a chat-app written in [Pure Python](https://github.com/BrianLesko/Low-Code-Chat/blob/main/low-code-chat.py)
+Compare multiple AI models responses between tabs. No chat history.
 
 &nbsp;
 
@@ -10,34 +10,25 @@ Compare multiple AI models. This git repository hosts a user interface for a cha
 
 ## Repository Structure
 ```
-Low-Code-Chat/
-├── .streamlit/
-│   └── config.toml
-├── app.py
-├── start.sh
-├── keys.json
-│   └── {"xai_api_key": "xghsipoksml...", "openai_api_key": "xfughsipoksml..." }
+
+chat-comparison/
+├── aitools.py
+├── chat.py
+├── preview.gif
 ├── requirements.txt
-└── .gitignore
+├── setup.sh
+├── start.sh
 ```
 
 &nbsp;
 
 ## Run this demo locally
 ```
-python3 -m venv myenv
-source myenv/bin/activate
-pip install streamlit
-streamlit app.py
+sudo chmod +x setup.sh
+./setup.sh
+./start.sh
 ```
 
-&nbsp;
-
-## Topics 
-```
-Python | Streamlit | Git | Low Code UI
-Template Repository | Streamlit Secrets | Chat interface | LLM
-```
 &nbsp;
 
 <hr>
