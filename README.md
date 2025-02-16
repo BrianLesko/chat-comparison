@@ -24,6 +24,8 @@ chat-comparison/
 
 ## Run this demo locally
 ```
+git clone https://github.com/BrianLesko/chat-comparison.git
+cd chat-comparison
 sudo chmod +x setup.sh
 ./setup.sh
 ./start.sh
